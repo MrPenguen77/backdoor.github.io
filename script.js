@@ -7,6 +7,7 @@ function showPage(page) {
         content.innerHTML = '<h1>Download</h1><p>HypnOS 28.10.24 Xfce Edition.</p>';
     } else if (page === 'wiki') {
         content.innerHTML = '<h1>Wiki</h1><p>HypnOS System Requirements:</p><p>2 GB RAM (Recommended 4 GB RAM)</p><p>20 GB Disk Space</p><p>1 GHz Processor</p>';   
+        content.innerHTML += '<p>Deneme</p>';
     } else if (page === 'latest') {
         content.innerHTML = `
             <h1>Latest Updates</h1>
