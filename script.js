@@ -6,7 +6,7 @@ function showPage(page) {
     } else if (page === 'download') {
         content.innerHTML = '<h1>Download</h1><p>HypnOS Bubbly Blobfish ISO.</p>';
     } else if (page === 'wiki') {
-        content.innerHTML = '<h1>Wiki</h1><p>- HypnOS Sistem Gereksinimleri -</p><p>2 GB RAM (Tavsiye edilen 4 GB RAM)</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>'; 
+        content.innerHTML = '<h1>Wiki</h1><p>- HypnOS Sistem Gereksinimleri -</p><p>2 GB RAM</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>'; 
         
         content.innerHTML += '<p>- Kurulum Rehberi -</p>';
 
