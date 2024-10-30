@@ -16,7 +16,7 @@ function showPage(page) {
         
         // Eğer burada JavaScript ile boyutlandırmak isterseniz
         const updateImage = document.getElementById('updateImage');
-        updateImage.style.width = '400px'; // Genişlik
+        updateImage.style.width = '800px'; // Genişlik
         updateImage.style.height = 'auto'; // Yükseklik
     }
 }
