@@ -10,8 +10,13 @@ function showPage(page) {
     } else if (page === 'latest') {
         content.innerHTML = `
             <h1>Latest Updates</h1>
-            <img src="computer.png" alt="Computer Icon" class="update-image">
+            <img id="updateImage" src="computer.png" alt="Computer Icon" class="update-image">
             <p>Bubbly Blobfish come here you sweet thing.</p>
         `;
+        
+        // Eğer burada JavaScript ile boyutlandırmak isterseniz
+        const updateImage = document.getElementById('updateImage');
+        updateImage.style.width = '400px'; // Genişlik
+        updateImage.style.height = 'auto'; // Yükseklik
     }
 }
