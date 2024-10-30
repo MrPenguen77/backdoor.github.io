@@ -11,7 +11,7 @@ function showPage(page) {
         content.innerHTML = `
             <h1>Latest Updates</h1>
             <img src="computer.png" alt="Computer Icon" class="update-image">
-            <p>Örnek bir yazı. Bu alanı güncelleyebilirsiniz.</p>
+            <p>Bubbly Blobfish come here you sweet thing.</p>
         `;
     }
 }
