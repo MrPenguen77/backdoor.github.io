@@ -10,7 +10,7 @@ function showPage(page) {
         
         content.innerHTML += '<p>- Kurulum Rehberi -</p>';
 
-        content.innerHTML += '<p>ISO'yu indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
+        content.innerHTML += '<p>ISOyu indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
 
         content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
 
