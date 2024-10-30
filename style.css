@@ -54,8 +54,7 @@ footer {
 
 .update-image {
     width: 200px; /* Genişlik ayarı */
-    height: 150px; /* Yükseklik ayarı */
+    height: auto; /* Yüksekliği otomatik ayarla */
     margin-top: 10px; 
     margin-bottom: 10px;
 }
-
