@@ -4,7 +4,7 @@ function showPage(page) {
     if (page === 'home') {
         content.innerHTML = '<h1>Home</h1><p>HypnOS is an Ubuntu based GNU/Linux distribution developed for cybersecurity.</p>';
     } else if (page === 'download') {
-        content.innerHTML = '<h1>Download</h1><p>HypnOS 28.10.24 Xfce Edition.</p>';
+        content.innerHTML = '<h1>Download</h1><p>HypnOS Bubbly Blobfish ISO.</p>';
     } else if (page === 'wiki') {
         content.innerHTML = '<h1>Wiki</h1><p>- HypnOS System Requirements -</p><p>2 GB RAM (Recommended 4 GB RAM)</p><p>20 GB Disk Space</p><p>1 GHz Processor</p>'; 
         
