@@ -2,19 +2,29 @@ function showPage(page) {
     const content = document.getElementById('content');
 
     if (page === 'home') {
-        content.innerHTML = '<h1>Home</h1><p>HypnOS is an Ubuntu based GNU/Linux distribution developed for cybersecurity.</p>';
+        content.innerHTML = '<h1>Home</h1><p>HypnOS, siber güvenlik için geliştirilmiş Ubuntu tabanlı bir GNU/Linux dağıtımıdır.</p>';
     } else if (page === 'download') {
         content.innerHTML = '<h1>Download</h1><p>HypnOS Bubbly Blobfish ISO.</p>';
     } else if (page === 'wiki') {
-        content.innerHTML = '<h1>Wiki</h1><p>- HypnOS System Requirements -</p><p>2 GB RAM (Recommended 4 GB RAM)</p><p>20 GB Disk Space</p><p>1 GHz Processor</p>'; 
+        content.innerHTML = '<h1>Wiki</h1><p>- HypnOS Sistem Gereksinimleri -</p><p>2 GB RAM (Tavsiye edilen 4 GB RAM)</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>'; 
         
-        content.innerHTML += '<p>- Install Guide -</p>';
+        content.innerHTML += '<p>- Kurulum Rehberi -</p>';
 
-        content.innerHTML += '<p>Download the ISO, burn it to your USB memory, then start your computer with your USB memory from the BIOS menu, press "Start HypnOS" in the GRUB menu, start the download application in the live menu and finish the installation.</p>';
+        content.innerHTML += '<p>ISO'yu indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
 
-        content.innerHTML += '<p>- HypnOS GitHub Page -</p>';
+        content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
 
         content.innerHTML += '<p> https://github.com/MrPenguen77/HypnOS </p>';
+
+        content.innerHTML += '<p>- HypnOS Geliştirici Takımı -</p>';
+
+        content.innerHTML += '<p> MrPenguen - Proje Sorumlusu, Proje Sahibi, Geliştirici, Web Tasarım, Tester, Görsel Tasarım, Sosyal Medya Sorumlusu </p>';
+
+        content.innerHTML += '<p> Kerim - Fikir, Gönüllü Tester </p>';
+        
+        content.innerHTML += '<p>- Nasıl Katkı Yaparım? -</p>';
+
+        content.innerHTML += '<p> Bulduğunuz hataları bize iletip geliştirmemizde yardımcı olup katkı yapabilirsiniz <3 </p>';
     } else if (page === 'latest') {
         content.innerHTML = `
             <h1>Latest Updates</h1>
