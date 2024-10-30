@@ -14,7 +14,7 @@ function showPage(page) {
 
         content.innerHTML += '<p>- HypnOS GitHub Page -</p>';
 
-        content.innerHTML += '<p>https://github.com/MrPenguen77/HypnOS</p>';
+        content.innerHTML += '<p> https://github.com/MrPenguen77/HypnOS </p>';
     } else if (page === 'latest') {
         content.innerHTML = `
             <h1>Latest Updates</h1>
