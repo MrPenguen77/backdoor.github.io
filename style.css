@@ -52,3 +52,8 @@ footer {
     width: 100%;
 }
 
+.update-image {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
