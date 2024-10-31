@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const content = document.getElementById('content');
     
         if (page === 'home') {
-            content.innerHTML = '<h1>Home</h1><p>HypnOS, siber güvenlik için geliştirilmiş Ubuntu tabanlı bir GNU/Linux dağıtımıdır.</p>';
+            content.innerHTML = '<h1>Home</h1><p>- HypnOS -</p>';
+
+            content.innerHTML += '<p>HypnOS hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
         } else if (page === 'download') {
             content.innerHTML = '<h1>Download</h1><p>HypnOS Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
@@ -13,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
             content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/HypnOS" target="_blank">GitHub HypnOS</a></p>';
-            content.innerHTML += '<p>- HypnOS Geliştirici Takımı-</p>';
+            content.innerHTML += '<p>- HypnOS Geliştirici Takımı -</p>';
             content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
             content.innerHTML += '<p>Kerim - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
         } else if (page === 'latest') {
