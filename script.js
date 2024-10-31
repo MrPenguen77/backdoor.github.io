@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Sayfa açıldığında 'home' sayfasını göster
     showPage('home');
-    
+
     window.showPage = showPage; 
+});
+
+// Sayfa kaydırıldığında alt bilgiyi görünür yap
+document.addEventListener("scroll", function() {
+    const footer = document.querySelector("footer");
+    if (window.scrollY > 50) { // 50 piksel kaydırıldığında
+        footer.classList.add("visible");
+    } else {
+        footer.classList.remove("visible");
+    }
 });
