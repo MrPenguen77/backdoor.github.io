@@ -1,4 +1,4 @@
-function showPage(page) {
+ function showPage(page) {
     const content = document.getElementById('content');
 
     if (page === 'home') {
@@ -15,16 +15,6 @@ function showPage(page) {
         content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
 
         content.innerHTML += '<p> https://github.com/MrPenguen77/HypnOS </p>';
-
-        content.innerHTML += '<p>- HypnOS Geliştirici Takımı -</p>';
-
-        content.innerHTML += '<p> MrPenguen - Proje Sorumlusu, Proje Sahibi, Geliştirici, Web Tasarım, Tester, Görsel Tasarım, Sosyal Medya Sorumlusu </p>';
-
-        content.innerHTML += '<p> Kerim - Fikir, Gönüllü Tester </p>';
-        
-        content.innerHTML += '<p>- Nasıl Katkı Yaparım? -</p>';
-
-        content.innerHTML += '<p> Bulduğunuz hataları bize iletip geliştirmemizde yardımcı olup katkı yapabilirsiniz <3 </p>';
     } else if (page === 'latest') {
         content.innerHTML = 
             <h1>Latest Updates</h1>
