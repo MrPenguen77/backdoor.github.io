@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HypnOS -</p>';
-            content.innerHTML += '<p>HypnOS hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
+            content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
         } else if (page === 'download') {
-            content.innerHTML = '<h1>İndir</h1><p>HypnOS Bubbly Blobfish ISO.</p>';
+            content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
-            content.innerHTML = '<h1>Wiki</h1><p>- HypnOS Sistem Gereksinimleri -</p><p>2 GB RAM</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>'; 
+            content.innerHTML = '<h1>Wiki</h1><p>- HackUbuntu Sistem Gereksinimleri -</p><p>2 GB RAM</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>'; 
             content.innerHTML += '<p>- Kurulum Rehberi -</p>';
-            content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
-            content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
-            content.innerHTML += '<p><a href="https://github.com/MrPenguen77/HypnOS" target="_blank">GitHub HypnOS</a></p>';
-            content.innerHTML += '<p>- HypnOS Geliştirici Takımı -</p>';
+            content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HackUbuntu" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
+            content.innerHTML += '<p>- HackUbuntu GitHub Sayfası -</p>';
+            content.innerHTML += '<p><a href="https://github.com/MrPenguen77/hackubuntu" target="_blank">GitHub HackUbuntu</a></p>';
+            content.innerHTML += '<p>- HackUbuntu Geliştirici Takımı -</p>';
             content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
             content.innerHTML += '<p>Kerim - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
         } else if (page === 'latest') {
