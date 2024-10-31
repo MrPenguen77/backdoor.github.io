@@ -13,11 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HypnOS" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
             content.innerHTML += '<p>- HypnOS GitHub Sayfası -</p>';
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/HypnOS" target="_blank">GitHub HypnOS</a></p>';
+            content.innerHTML += '<p>- HypnOS Geliştirici Takımı-</p>';
+            content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
+            content.innerHTML += '<p>Kerim - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
         } else if (page === 'latest') {
             content.innerHTML = 
                 '<h1>Latest Updates</h1>' +
                 '<img id="updateImage" src="computer.png" alt="Computer Icon" class="update-image">' +
-                '<p>Bubbly Blobfish come here you sweet thing.</p>';
+                '<p>Merhaba! Bubbly Blobfish</p>';
             
             // Eğer burada JavaScript ile boyutlandırmak isterseniz
             const updateImage = document.getElementById('updateImage');
