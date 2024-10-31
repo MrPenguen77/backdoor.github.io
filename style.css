@@ -1,22 +1,24 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Daha açık arka plan rengi */
+    background-color: #f0f0f0; 
     color: #333;
+    transition: background-color 0.5s; /* Arka plan rengi geçiş animasyonu */
 }
 
 header {
-    background-color: #333; /* Koyu arka plan */
+    background-color: #333; 
     color: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s; /* Başlık arka planı geçiş animasyonu */
 }
 
 .logo img {
-    max-height: 70px; /* Logo yüksekliği */
+    max-height: 70px; 
 }
 
 nav ul {
@@ -30,16 +32,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* Yazı rengi */
+    color: #ffffff; 
     text-decoration: none;
-    transition: color 0.3s;
-    padding: 5px 10px; /* Buton benzeri görünüm */
-    border-radius: 5px; /* Kenar yuvarlama */
+    transition: background-color 0.3s, color 0.3s; /* Renk geçiş animasyonu */
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Hover efekti */
-    color: #ffffff; /* Hoverda yazı rengi */
+    background-color: #555; 
+    color: #ffffff; 
 }
 
 main {
@@ -49,9 +51,12 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333; /* Alt bilgi için koyu arka plan */
+    background-color: #333; 
     color: #ffffff;
-    position: relative;
+    position: fixed; /* Footer'ı sabit yap */
+    bottom: 0; /* Sayfanın en altında sabitle */
+    left: 0;
+    right: 0;
     opacity: 0; /* Varsayılan olarak görünmez */
     transition: opacity 0.5s; /* Opasite geçiş efekti */
 }
@@ -61,13 +66,23 @@ footer.visible {
 }
 
 .update-image {
-    width: 400px; /* Genişlik ayarı */
-    height: auto; /* Yüksekliği otomatik ayarla */
+    width: 400px; 
+    height: auto; 
     margin-top: 10px; 
     margin-bottom: 10px;
 }
 
-/* Alt bilgiyi yalnızca sayfa aşağı kaydırıldığında göster */
-body.scrolled footer {
-    opacity: 1;
+/* Footer'ın görünürlüğü için animasyon */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sayfa kaydırıldığında footer'ı yukarıdan aşağı animasyonla getir */
+footer {
+    animation: fadeIn 0.5s forwards; /* Animasyon efektini uygula */
 }
