@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const content = document.getElementById('content');
 
         if (page === 'home') {
-            content.innerHTML = '<h1>Home</h1><p>- HypnOS -</p>';
+            content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
