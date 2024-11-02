@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/hackubuntu" target="_blank">GitHub HackUbuntu</a></p>';
             content.innerHTML += '<img src="dev.png" alt="Developer Team Logo" width="200">';
             content.innerHTML += '<p>- HackUbuntu Linux Geliştirici Takımı -</p>';
-            content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
-            content.innerHTML += '<p>LordBalbazar - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
-            content.innerHTML += '<p>Tamelektro - Gönüllü sürüm tester ve geri bildirim</p>';
+            content.innerHTML += '<p>MrPenguen - Görev: Takım Lideri, Geliştirici</p>';
+            content.innerHTML += '<p>LordBalbazar - Görev: Tester</p>';
+            content.innerHTML += '<p>Tamelektro - Görev: Tester</p>';
+            content.innerHTML += '<p>HamTux - Görev: Geliştirici</p>
         } else if (page === 'latest') {
             content.innerHTML = 
                 '<h1>Son Güncellemeler</h1>' +
