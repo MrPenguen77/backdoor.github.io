@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HackUbuntu" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
             content.innerHTML += '<p>- HackUbuntu GitHub Sayfası -</p>';
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/hackubuntu" target="_blank">GitHub HackUbuntu</a></p>';
+            content.innerHTML += '<img src="dev.png" alt="Developer Team Logo" width="200">';
             content.innerHTML += '<p>- HackUbuntu Linux Geliştirici Takımı -</p>';
             content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
             content.innerHTML += '<p>LordBalbazar - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
@@ -31,16 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    // Sayfa açıldığında 'home' sayfasını göster
     showPage('home');
 
     window.showPage = showPage; 
 });
 
-// Sayfa kaydırıldığında alt bilgiyi görünür yap
 document.addEventListener("scroll", function() {
     const footer = document.querySelector("footer");
-    if (window.scrollY > 50) { // 50 piksel kaydırıldığında
+    if (window.scrollY > 50) {
         footer.classList.add("visible");
     } else {
         footer.classList.remove("visible");
