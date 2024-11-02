@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p>ISO dosyasını indirin, USB belleğinize yazın, ardından BIOS menüsünden bilgisayarınızı USB belleğinizle başlatın, GRUB menüsünde "Start HackUbuntu" tuşuna basın, canlı menüde indirme uygulamasını başlatın ve kurulumu bitirin.</p>';
             content.innerHTML += '<p>- HackUbuntu GitHub Sayfası -</p>';
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/hackubuntu" target="_blank">GitHub HackUbuntu</a></p>';
-            content.innerHTML += '<p>- HackUbuntu Geliştirici Takımı -</p>';
+            content.innerHTML += '<p>- HackUbuntu Linux Geliştirici Takımı -</p>';
             content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
             content.innerHTML += '<p>LordBalbazar - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
             content.innerHTML += '<p>Tamelektro - Gönüllü sürüm tester ve geri bildirim</p>';
