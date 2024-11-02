@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p><a href="https://github.com/MrPenguen77/hackubuntu" target="_blank">GitHub HackUbuntu</a></p>';
             content.innerHTML += '<p>- HackUbuntu Geliştirici Takımı -</p>';
             content.innerHTML += '<p>MrPenguen - Proje Lideri - Takım Sorumlusu - Geliştirici - Sanat ve Web Tasarım</p>';
-            content.innerHTML += '<p>Kerim - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
+            content.innerHTML += '<p>LordBalbazar - Proje Sorumlusu - Gönüllü Tester - Sosyal Medya Sorumlusu</p>';
+            content.innerHTML += '<p>Tamelektro - Gönüllü sürüm tester ve geri bildirim</p>';
         } else if (page === 'latest') {
             content.innerHTML = 
                 '<h1>Son Güncellemeler</h1>' +
