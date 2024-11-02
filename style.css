@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c; 
+    background-color: #070000; 
     color: #333;
     transition: background-color 0.5s; /* Arka plan rengi geçiş animasyonu */
 }
