@@ -61,12 +61,8 @@ footer {
     transition: opacity 0.5s;
 }
 
-footer.visible {
-    opacity: 1;
-}
-
-.update-image {
-    width: 400px;
+.awesome-image {
+    width: 300px; /* Büyüttük */
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -96,7 +92,7 @@ footer.visible {
     margin-right: 10px;
     cursor: pointer;
     border: 1px solid #333;
-    border-radius: 50%;
+    border-radius: 5%; /* Oval değil, dikdörtgen yapıyoruz */
     transition: transform 0.2s;
 }
 
