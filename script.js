@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
-            content.innerHTML += '<img src="awesome.png" alt="Awesome Feature" class="awesome-image">';
+            content.innerHTML += '<img src="awesome.png" alt="Awesome Feature" width="300">';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
@@ -38,13 +38,23 @@ function toggleTranslateMenu() {
 }
 
 function translatePage(language) {
-    const content = document.getElementById('content');
-    if (language === 'tr') {
-        content.innerHTML = '<h1>Ana Sayfa</h1><p>- HackUbuntu -</p><p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
-    } else if (language === 'en') {
-        content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p><p>HackUbuntu is lightweight, powerful, fast, and based on Ubuntu.</p>';
-    } else if (language === 'de') {
-        content.innerHTML = '<h1>Startseite</h1><p>- HackUbuntu -</p><p>HackUbuntu ist leicht, leistungsstark, schnell und basiert auf Ubuntu.</p>';
+    new google.translate.TranslateElement(
+        {pageLanguage: 'tr', includedLanguages: 'tr,en,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 
+        'google_translate_element'
+    );
+
+    const langMap = {
+        tr: 'tr',
+        en: 'en',
+        de: 'de'
+    };
+
+    const iframe = document.querySelector('iframe.goog-te-menu-frame');
+    if (iframe) {
+        const option = iframe.contentWindow.document.querySelector(`.goog-te-menu2-item span.text:contains(${langMap[language]})`);
+        if (option) {
+            option.click();
+        }
     }
     toggleTranslateMenu();
 }
