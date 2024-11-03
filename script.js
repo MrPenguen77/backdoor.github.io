@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
-            content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
             content.innerHTML += '<img src="awesome.png" id="awesomeImage" alt="Awesome Feature">';
-            content.innerHTML += '<p>HackUbuntu Linux Awesome VM 2024.11.03 Sürümü Hazır</p>';
-            content.innerHTML += '<p>30dan fazla hacking aracı bulunur.</p>';
+            content.innerHTML += '<p>- HackUbuntu Linux Bubbly Blobfish 2024.11.03 Sürümü Hazır -</p>';
+            content.innerHTML += '<p>HackUbuntu daha kullanıcı dostu uygulamalar ve hacking için gerekli araçlarla donatılmıştır.</p>';
+            content.innerHTML += '<p>Blackarch Linux ve Kali Linux benzeri Ubuntu tabanlı bir dağıtımdır.</p>';
+            content.innerHTML += '<p>Hergün gerekli güncellemeleri alır ve kullanıcılarına sunar.</p>';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
