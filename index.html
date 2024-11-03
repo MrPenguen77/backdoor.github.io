@@ -28,7 +28,7 @@
             <h1>Home</h1>
             <p>- HackUbuntu -</p>
             <p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>
-            <img src="awesome.png" alt="Awesome Feature" width="300">
+            <img src="awesome.png" id="awesomeImage" alt="Awesome Feature">
         </div>
     </main>
 
@@ -40,13 +40,11 @@
     <div class="translate-container">
         <button onclick="toggleTranslateMenu()" class="translate-button">Translate</button>
         <div id="flagContainer" class="flag-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türkiye" onclick="translatePage('tr')" width="30">
-            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA" onclick="translatePage('en')" width="30">
-            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany" onclick="translatePage('de')" width="30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türkçe" onclick="translatePage('tr')" width="30">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" onclick="translatePage('en')" width="30">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Deutsch" onclick="translatePage('de')" width="30">
         </div>
     </div>
-
-    <div id="google_translate_element" style="display:none;"></div>
 
     <script src="script.js"></script>
 </body>
