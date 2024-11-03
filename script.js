@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
-            content.innerHTML += '<img src="awesome.png" alt="Awesome Feature" width="200">';
+            content.innerHTML += '<img src="awesome.png" alt="Awesome Feature" width="250">';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
