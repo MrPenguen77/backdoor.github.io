@@ -6,6 +6,7 @@
     <title>HackUbuntu Linux</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,7 @@
             <h1>Home</h1>
             <p>- HackUbuntu -</p>
             <p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>
-            <img src="awesome.png" alt="Awesome Feature" class="awesome-image">
+            <img src="awesome.png" alt="Awesome Feature" width="300">
         </div>
     </main>
 
@@ -35,6 +36,7 @@
         <p>© HackUbuntu</p>
     </footer>
 
+    <!-- Translate Button and Flags -->
     <div class="translate-container">
         <button onclick="toggleTranslateMenu()" class="translate-button">Translate</button>
         <div id="flagContainer" class="flag-container">
@@ -43,6 +45,8 @@
             <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany" onclick="translatePage('de')" width="30">
         </div>
     </div>
+
+    <div id="google_translate_element" style="display:none;"></div>
 
     <script src="script.js"></script>
 </body>
