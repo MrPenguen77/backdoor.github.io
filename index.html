@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HackUbuntu - Penetration Testing</title>
+    <title>HackUbuntu Linux</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -27,12 +27,23 @@
             <h1>Home</h1>
             <p>- HackUbuntu -</p>
             <p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>
+            <img src="awesome.png" alt="Awesome Feature" width="200">
         </div>
     </main>
 
     <footer>
         <p>© HackUbuntu</p>
     </footer>
+
+    <!-- Translate Button and Flags -->
+    <div class="translate-container">
+        <button onclick="toggleTranslateMenu()" class="translate-button">Translate</button>
+        <div id="flagContainer" class="flag-container">
+            <img src="turkey.png" alt="Türkiye" onclick="translatePage('tr')" width="30">
+            <img src="usa.png" alt="USA" onclick="translatePage('en')" width="30">
+            <img src="germany.png" alt="Germany" onclick="translatePage('de')" width="30">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
