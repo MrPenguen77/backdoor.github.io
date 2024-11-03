@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
             content.innerHTML += '<img src="awesome.png" id="awesomeImage" alt="Awesome Feature">';
-            content.innerHTML += '<h1>HackUbuntu Linux Awesome VM 2024.11.03 Sürümü Hazır</h1>';
+            content.innerHTML += '<p>HackUbuntu Linux Awesome VM 2024.11.03 Sürümü Hazır</p>';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
