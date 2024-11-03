@@ -1,16 +1,15 @@
-/* Genel sayfa stili */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    transition: background-color 0.5s;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column; /* Dikey yerleşim için flexbox kullanıyoruz */
+    min-height: 100vh; /* Sayfa yüksekliğini en az 100vh yaparak footer'ı en alta itiyoruz */
 }
 
-/* Header ve navigasyon */
 header {
     background-color: #333;
     color: #ffffff;
@@ -18,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s;
 }
 
 .logo img {
@@ -37,6 +37,7 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -46,34 +47,35 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Ana içerik */
 main {
     padding: 20px;
-    flex: 1;
+    flex-grow: 1; /* Ana içeriğin alanı büyütmesi için */
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
+    position: relative; /* Pozisyonu relative yapıyoruz */
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; /* Sayfanın en altına itmek için */
+    clear: both; /* Önceki öğelerin üstte kalmasını engelle */
+    opacity: 1; /* Görünürlüğü artırıyoruz */
+    transition: opacity 0.5s;
 }
 
-/* Görsel boyutlandırma */
-#awesomeImage {
-    width: 400px; /* awesome.png daha büyük */
+footer.visible {
+    opacity: 1;
 }
 
-#updateImage {
-    width: 100px; /* computer.png daha küçük */
+.update-image {
+    width: 250px; /* Computer icon boyutunu küçültüyoruz */
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* Translate butonu ve bayraklar */
 .translate-container {
     position: fixed;
     bottom: 20px;
@@ -98,9 +100,8 @@ footer {
     margin-right: 10px;
     cursor: pointer;
     border: 1px solid #333;
-    border-radius: 5px;
-    width: 30px;
-    height: 20px;
+    border-radius: 5px; /* Oval görünüm yerine köşeleri hafif yuvarlıyoruz */
+    transition: transform 0.2s;
 }
 
 .flag-container img:hover {
