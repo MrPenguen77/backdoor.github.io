@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     function showPage(page) {
         const content = document.getElementById('content');
-        content.setAttribute("data-page", page); // Mevcut sayfa ismini kaydet
+        content.setAttribute("data-page", page);
 
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
@@ -39,9 +39,10 @@ function toggleTranslateMenu() {
 }
 
 function translatePage(language) {
-    const page = document.getElementById('content').getAttribute("data-page"); // Mevcut sayfayı al
-    showPage(page); // Çeviri öncesi mevcut sayfayı yenile
+    const page = document.getElementById('content').getAttribute("data-page");
+    showPage(page);
 
-    new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'tr,en,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'content');
+    const googleTranslateElement = new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'tr,en,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'content');
+    document.getElementById("content").appendChild(googleTranslateElement);
     toggleTranslateMenu();
 }
