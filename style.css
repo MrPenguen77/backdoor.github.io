@@ -1,24 +1,24 @@
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     color: #333;
-    transition: background-color 0.5s; /* Arka plan rengi geçiş animasyonu */
+    transition: background-color 0.5s;
 }
 
 header {
-    background-color: #333; 
+    background-color: #333;
     color: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.5s; /* Başlık arka planı geçiş animasyonu */
+    transition: background-color 0.5s;
 }
 
 .logo img {
-    max-height: 70px; 
+    max-height: 70px;
 }
 
 nav ul {
@@ -32,16 +32,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s; /* Renk geçiş animasyonu */
-    padding: 5px 10px; 
-    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #555; 
-    color: #ffffff; 
+    background-color: #555;
+    color: #ffffff;
 }
 
 main {
@@ -51,38 +51,55 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333; 
+    background-color: #333;
     color: #ffffff;
-    position: fixed; /* Footer'ı sabit yap */
-    bottom: 0; /* Sayfanın en altında sabitle */
+    position: fixed;
+    bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0; /* Varsayılan olarak görünmez */
-    transition: opacity 0.5s; /* Opasite geçiş efekti */
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 footer.visible {
-    opacity: 1; /* Gösterildiğinde görünür */
+    opacity: 1;
 }
 
 .update-image {
-    width: 400px; 
-    height: auto; 
-    margin-top: 10px; 
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-/* Footer'ın görünürlüğü için animasyon */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.translate-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
 }
 
-/* Sayfa kaydırıldığında footer'ı yukarıdan aşağı animasyonla getir */
-footer {
-    animation: fadeIn 0.5s forwards; /* Animasyon efektini uygula */
+.translate-button {
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flag-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.flag-container img {
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.flag-container img:hover {
+    transform: scale(1.1);
 }
