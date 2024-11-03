@@ -71,11 +71,6 @@ footer {
     margin-bottom: 10px;
 }
 
-#awesomeImage {
-    width: 500px; /* İstediğiniz boyuta göre ayarlayın */
-    height: auto; /* Oranı korumak için */
-}
-
 .translate-container {
     position: fixed;
     bottom: 20px;
