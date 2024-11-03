@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             content.innerHTML += '<p>HackUbuntu daha kullanıcı dostu uygulamalar ve hacking için gerekli araçlarla donatılmıştır.</p>';
             content.innerHTML += '<p>Blackarch Linux ve Kali Linux benzeri Ubuntu tabanlı bir dağıtımdır.</p>';
             content.innerHTML += '<p>Hergün gerekli güncellemeleri alır ve kullanıcılarına sunar.</p>';
+            content.innerHTML += '<p>Awesome WM pencere yönetisiyle gelir ve kullanıcının isteğine göre düzenlemesine olanak tanır.</p>';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
