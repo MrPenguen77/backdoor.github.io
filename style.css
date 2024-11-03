@@ -60,13 +60,8 @@ footer {
     position: relative; /* Pozisyonu relative yapıyoruz */
     width: 100%;
     margin-top: auto; /* Sayfanın en altına itmek için */
-    clear: both; /* Önceki öğelerin üstte kalmasını engelle */
     opacity: 1; /* Görünürlüğü artırıyoruz */
     transition: opacity 0.5s;
-}
-
-footer.visible {
-    opacity: 1;
 }
 
 .update-image {
