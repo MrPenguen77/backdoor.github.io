@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     function showPage(page) {
         const content = document.getElementById('content');
+        content.setAttribute("data-page", page); // Mevcut sayfa ismini kaydet
 
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<p>HackUbuntu hafif, güçlü ve hızlı olup Ubuntu tabanlıdır.</p>';
-            content.innerHTML += '<img src="awesome.png" alt="Awesome Feature" width="300">';
+            content.innerHTML += '<img src="awesome.png" id="awesomeImage" alt="Awesome Feature">';
         } else if (page === 'download') {
             content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
         } else if (page === 'wiki') {
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (page === 'latest') {
             content.innerHTML = 
                 '<h1>Son Güncellemeler</h1>' +
-                '<img id="updateImage" src="computer.png" alt="Computer Icon" class="update-image">' +
+                '<img src="computer.png" id="updateImage" alt="Computer Icon">' +
                 '<p>Merhaba! Bubbly Blobfish</p>';
         }
     }
@@ -38,23 +39,9 @@ function toggleTranslateMenu() {
 }
 
 function translatePage(language) {
-    new google.translate.TranslateElement(
-        {pageLanguage: 'tr', includedLanguages: 'tr,en,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 
-        'google_translate_element'
-    );
+    const page = document.getElementById('content').getAttribute("data-page"); // Mevcut sayfayı al
+    showPage(page); // Çeviri öncesi mevcut sayfayı yenile
 
-    const langMap = {
-        tr: 'tr',
-        en: 'en',
-        de: 'de'
-    };
-
-    const iframe = document.querySelector('iframe.goog-te-menu-frame');
-    if (iframe) {
-        const option = iframe.contentWindow.document.querySelector(`.goog-te-menu2-item span.text:contains(${langMap[language]})`);
-        if (option) {
-            option.click();
-        }
-    }
+    new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'tr,en,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'content');
     toggleTranslateMenu();
 }
