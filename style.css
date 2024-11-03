@@ -1,12 +1,13 @@
+/* Genel sayfa stili */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
-    transition: background-color 0.5s;
 }
 
+/* Header ve navigasyon */
 header {
     background-color: #333;
     color: #ffffff;
@@ -14,7 +15,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.5s;
 }
 
 .logo img {
@@ -34,7 +34,6 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -44,30 +43,29 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
+/* Ana içerik */
 main {
     padding: 20px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #ffffff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.5s;
 }
 
-.awesome-image {
-    width: 300px; /* Büyüttük */
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* Görsel boyutlandırma */
+#awesomeImage {
+    width: 300px; /* awesome.png biraz daha büyük */
 }
 
+#updateImage {
+    width: 150px; /* computer.png daha küçük */
+}
+
+/* Translate butonu ve bayraklar */
 .translate-container {
     position: fixed;
     bottom: 20px;
@@ -92,8 +90,9 @@ footer {
     margin-right: 10px;
     cursor: pointer;
     border: 1px solid #333;
-    border-radius: 5%; /* Oval değil, dikdörtgen yapıyoruz */
-    transition: transform 0.2s;
+    border-radius: 5px;
+    width: 30px;
+    height: 20px;
 }
 
 .flag-container img:hover {
