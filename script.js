@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if (page === 'home') {
             content.innerHTML = '<h1>Home</h1><p>- HackUbuntu -</p>';
             content.innerHTML += '<img src="awesome.png" id="awesomeImage" alt="Awesome Feature">';
-            content.innerHTML += '<p>- HackUbuntu Linux Bubbly Blobfish 2024.11.03 Sürümü Hazır -</p>';
+            content.innerHTML += '<p>- HackUbuntu Linux Full 2024.11.04 Sürümü Hazır -</p>';
             content.innerHTML += '<p>HackUbuntu daha kullanıcı dostu uygulamalar ve hacking için gerekli araçlarla donatılmıştır.</p>';
             content.innerHTML += '<p>Blackarch Linux ve Kali Linux benzeri Ubuntu tabanlı bir dağıtımdır.</p>';
             content.innerHTML += '<p>Hergün gerekli güncellemeleri alır ve kullanıcılarına sunar.</p>';
             content.innerHTML += '<p>Awesome WM pencere yönetisiyle gelir ve kullanıcının isteğine göre düzenlemesine olanak tanır.</p>';
         } else if (page === 'download') {
-            content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Bubbly Blobfish ISO.</p>';
+            content.innerHTML = '<h1>İndir</h1><p>HackUbuntu Full ISO İndir</p>';
         } else if (page === 'wiki') {
             content.innerHTML = '<h1>Wiki</h1><p>- HackUbuntu Sistem Gereksinimleri -</p><p>2 GB RAM</p><p>20 GB Disk Alanı</p><p>1 GHz İşlemci</p>';
             content.innerHTML += '<p>- Kurulum Rehberi -</p>';
