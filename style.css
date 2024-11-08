@@ -1,104 +1,64 @@
+/* Genel Stil */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    transition: background-color 0.5s;
-    display: flex;
-    flex-direction: column; /* Dikey yerleşim için flexbox kullanıyoruz */
-    min-height: 100vh; /* Sayfa yüksekliğini en az 100vh yaparak footer'ı en alta itiyoruz */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.5s;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+  border-bottom: 2px solid #333;
 }
 
-.logo img {
-    max-height: 70px;
+.navbar .logo {
+  height: 40px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+.navbar a {
+  text-decoration: none;
+  color: #f0f0f0;
 }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
+.navbar a:hover {
+  color: #e63946;
 }
 
-nav ul li a:hover {
-    background-color: #555;
-    color: #ffffff;
-}
-
+/* Sayfa İçerik Stili */
 main {
-    padding: 20px;
-    flex-grow: 1; /* Ana içeriğin alanı büyütmesi için */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #ffffff;
-    position: relative; /* Pozisyonu relative yapıyoruz */
-    width: 100%;
-    margin-top: auto; /* Sayfanın en altına itmek için */
-    opacity: 1; /* Görünürlüğü artırıyoruz */
-    transition: opacity 0.5s;
+.page {
+  display: none;
+  text-align: center;
 }
 
-.update-image {
-    width: 250px; /* Computer icon boyutunu küçültüyoruz */
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.page.active {
+  display: block;
 }
 
-.translate-container {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
+h1 {
+  font-size: 2rem;
+  color: #e63946;
 }
 
-.translate-button {
-    padding: 10px;
-    background-color: #333;
-    color: #63b8ff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.flag-container {
-    display: none;
-    margin-top: 10px;
-}
-
-.flag-container img {
-    margin-right: 10px;
-    cursor: pointer;
-    border: 1px solid #333;
-    border-radius: 5px; /* Oval görünüm yerine köşeleri hafif yuvarlıyoruz */
-    transition: transform 0.2s;
-}
-
-.flag-container img:hover {
-    transform: scale(1.1);
+p {
+  font-size: 1rem;
+  color: #d3d3d3;
 }
